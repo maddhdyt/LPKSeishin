@@ -85,10 +85,6 @@ body {
   transition: 0.3s;
 }
 
-.menu-checkbox {
-  display: none;
-}
-
 .mobile-links {
   position: absolute;
   right: 0;
@@ -101,6 +97,10 @@ body {
   padding: 15px;
   display: none;
   z-index: 100;
+}
+
+.mobile-links.active {
+  display: block;
 }
 
 .mobile-links li a {
@@ -132,10 +132,6 @@ body {
   z-index: 1000;
 }
 .dropdown:hover .dropdown-menu-mobile{
-  display: block;
-}
-
-.menu-checkbox:checked ~ .mobile-links {
   display: block;
 }
 
@@ -326,6 +322,24 @@ h3, h1, .hero-content p {
   display: none;
 }
 
+.about {
+  padding: 40x 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about.video {
+  width: 100%;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 @media(min-width: 768px) {
 
   .hero {
