@@ -204,8 +204,10 @@ h3, h1, .hero-content p {
   display: contents;
 }
 
-video {
-    width: 100%;
+.about-video {
+    width: fill;
+    max-width: 800px;
+    margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     outline: none;
@@ -226,7 +228,7 @@ video {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 3px rgba(0,0,0,0.3);
   font-weight: 800;
 }
 
@@ -310,5 +312,20 @@ video {
   
   .hero-content h3{
     font-size: 1.3rem;
+  }
+
+  .about {
+    flex-direction:row ;
+    gap: 5%;
+  }
+
+  .about-content{
+    max-width: 45%;
+  }
+
+  .benefits-card{
+    flex-direction: row;
+    text-align: left;
+    gap: 3%;
   }
 }

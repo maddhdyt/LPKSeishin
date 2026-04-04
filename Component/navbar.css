@@ -2,7 +2,7 @@
 
 body {
   background-color: #FFF9F4;
-}
+  overflow-x: hidden;
 
 * {
   margin: 0;
@@ -250,5 +250,4 @@ h1, h2, h3 {
   .dropdown a i {
     font-size: 0.7rem;
     margin-left: 5px;
-  }
-}
+  }}}
