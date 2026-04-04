@@ -1,17 +1,20 @@
-anjay
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="syarat_pendaftaran.css">
+    <link rel="stylesheet" href="../Component/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../Component/footer.css">
 </head>
 <body>
     <nav class="navbar-desktop">
         <div class = "nav-left">
-        <div class="logo"><img src="../assets/logo.png" alt="LPK Seishin Cakrabuana" ></div>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="LPK Seishin Cakrabuana" >
+        </div>
         <ul class="nav-links">
             <li><a href="#">Beranda</a></li>
             <li><a href="#">Tentang Kami</a></li>
@@ -20,7 +23,7 @@ anjay
                 <ul class="dropdown-menu">
                     <li><a href="#">Pilihan 1</a></li>
                     <li><a href="#">Pilihan 2</a></li>
-                    <li><a href="#">Pilihan 2</a></li>
+                    <li><a href="#">Pilihan 3</a></li>
                 </ul>
             </li>
         </ul>
@@ -39,12 +42,11 @@ anjay
             </div>
             <div class="nav-right-mobile">
                 <a href="#" class="btn-contact-circle"><i class="fa-solid fa-phone"></i></a>
-                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-                <label for="menu-toggle" class="hamburger">
+                <div id="hamburger" class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </label>
+                </div>
                 <ul class="mobile-links">
                     <li><a href="#">Beranda</a></li>
                     <li><a href="#">Tentang Kami</a></li>
@@ -53,7 +55,7 @@ anjay
                         <ul class="dropdown-menu-mobile">
                             <li><a href="#">Pilihan 1</a></li>
                             <li><a href="#">Pilihan 2</a></li>
-                            <li><a href="#">Pilihan 2</a></li>
+                            <li><a href="#">Pilihan 3</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -62,15 +64,18 @@ anjay
     </nav>
 
     <!---Hero Section-->
-    <section>
-        <div>
-            <div>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-img">
                 <img src="../assets/group-2560.png">
             </div>
-            <h3><span>PERSYARATAN PESERTA</span></h3>
-            <h1>Siap Bergabung? Pastikan Anda Memenuhi Kriteria</h1>
-            <h1>Langkah Awal Menuju Karir Impian di Negeri Sakura</h1>
-            <p>Yuk, rapihin dokumenmu sekarang juga, karena kesempatan emas nggak datang dua kali. Masa depan keren di Negeri Sakura sudah menunggu kamu</p>
+            <div class="hero-section">
+                <h3><span>PERSYARATAN PESERTA</span></h3>
+                <h1>Siap Bergabung? Pastikan Anda Memenuhi Kriteria</h1>
+                <p>Langkah Awal Menuju Karir Impian di Negeri Sakura</p>
+                <p>Yuk, rapihin dokumenmu sekarang juga, karena kesempatan emas nggak datang dua kali. Masa depan keren di Negeri Sakura sudah menunggu kamu</p>
+            </div>
+
             <div>
                 <img src="../assets/sakura.svg" alt="Sakura Icon">
                 <img src="../assets/sakura.svg" alt="Sakura Icon">
@@ -83,7 +88,7 @@ anjay
 
     <!---Persyaratan Umum Section-->
 
-    <section>
+    <section class="persyaratan-umum">
         <h3>Persyaratan <br /> Umum</h3>
         <div>
             <div>
