@@ -250,6 +250,10 @@ h3, h1, .hero-content p {
   text-align: center;
 }
 
+.program p{
+  max-width: 500px;
+}
+
 .program-content{
   padding: 20px 0;
   display: flex;
@@ -260,22 +264,28 @@ h3, h1, .hero-content p {
 
 .programs{
   display: grid;
-  grid-template-columns: repeat(1fr);
-  gap: 2%;
-  width: 80%;
-  margin-top: 10px;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 90%;
+  margin: 30px auto;
 }
 
 .program-card{
   background-color: white;
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  height: 100%;
   box-shadow: 0 4px 3px rgba(0,0,0,0.3);
+}
+
+.program-card img{
+  width: 100%;
+  height: auto;
 }
 
 .btn-prgm{
@@ -297,15 +307,24 @@ h3, h1, .hero-content p {
 
 
 .program-card p{
-  margin-top: 2%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.5;
   text-align: justify;
 }
 
-.program h3{
-  margin-top: 2%;
-  text-align: center;
+.program-card h3{
+  margin: 15px 0;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.3rem;
+  text-align: center;
+  width: 100%;
 }
+
 .program h2{
   text-align: center;
   font-size: 1.5rem;
@@ -398,10 +417,33 @@ h3, h1, .hero-content p {
   .about-content{
     max-width: 45%;
   }
+  .about h2{
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .about-label{
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
 
   .benefits-card{
     flex-direction: row;
     text-align: left;
     gap: 3%;
+  }
+
+  .programs{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .program h2{
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .program h5{
+    font-weight: 800;
+    font-size: 1.3rem;
   }
 }
