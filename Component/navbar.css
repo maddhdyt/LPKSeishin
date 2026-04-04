@@ -124,7 +124,6 @@ h1, h2, h3 {
 
 .dropdown-menu-mobile {
   position: absolute;
-  top: 100%;
   right: 0;
   background-color: white;
   min-width: 200px;

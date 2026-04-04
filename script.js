@@ -11,3 +11,7 @@ const dropdownMenu = document.querySelector('.dropdown-menu-mobile');
 dropdown.addEventListener('click', function () {
     dropdownMenu.classList.toggle('active');
 });
+
+dropdownMenu.addEventListener('click', function () {
+    dropdownMenu.classList.toggle('active');
+});
