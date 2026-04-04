@@ -56,7 +56,7 @@ body {
   color:#ED1B24;
 }
 
-.persyaratan-umum {
+.persyaratan {
   padding-top: 37px;
   display: flex;
   flex-direction: column;
@@ -66,17 +66,16 @@ body {
   text-align: center;
 }
 
-.persyaratan-umum h3 {
+.persyaratan h3 {
   color: #ED1B24;
   font-weight: 600;
 }
 
-.persyaratan-umum h3 + p {
+.persyaratan h3 + p {
   font-size: 50px;
   font-weight: 600;
+  padding-bottom: 63px;
 }
-
-
 
 
 .card-items {
@@ -113,6 +112,7 @@ body {
   padding-top: 16px;
   padding-right: 23px;
   padding-left: 23px;
+  font-weight: 600;
 
 
 }
