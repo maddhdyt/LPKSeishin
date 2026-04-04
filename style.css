@@ -240,6 +240,82 @@ h3, h1, .hero-content p {
   margin-top: 30px;
 }
 
+.program{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  text-align: center;
+}
+
+.program-content{
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.programs{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 2%;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.program-card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 3px rgba(0,0,0,0.3);
+}
+
+.btn-prgm{
+  margin-top: 20px;
+  background-color: #ED1B24;
+  color: white;
+  text-decoration: none;
+  padding: 14px 0;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+
+.program-card p{
+  margin-top: 2%;
+  text-align: justify;
+}
+
+.program h3{
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.program h2{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.program h5{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 @media(min-width: 768px) {
 
   .hero {

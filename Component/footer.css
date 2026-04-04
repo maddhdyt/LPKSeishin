@@ -1,0 +1,22 @@
+footer{
+  background-color: #222222;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 0 5%;
+  text-align: justify;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    gap: 20px;
+}
+
+.footer-container p{
+    font-size: 0.8rem;
+}
