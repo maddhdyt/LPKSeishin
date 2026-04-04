@@ -1,4 +1,7 @@
+body {
 
+  background-color: #FFF9F4;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -54,11 +57,36 @@
 }
 
 .persyaratan-umum {
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
   padding-right: 20px;
   padding-left: 20px;
+  align-items: center;
+  text-align: center;
 }
+
+.persyaratan-umum h3 {
+  color: #ED1B24;
+  font-weight: 600;
+}
+
+.persyaratan-umum h3 + p {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.card-items {
+  border: #ED1B24;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-items p {
+  text-align: justify;
+}
+
+
 
 
 
