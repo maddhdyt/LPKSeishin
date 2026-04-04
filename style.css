@@ -182,23 +182,62 @@ h3, h1, .hero-content p {
 }
 
 .about {
-  padding: 40x 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  text-align: justify;
+}
+
+.about-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.about-title {
+  font-size : 1.5rem;
 }
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: contents;
 }
 
-.about.video {
-  width: 100%;
+video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    outline: none;
 }
 .about-content {
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
+.benefits-card {
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  font-weight: 800;
+}
+
+.about-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+}
+
 @media(min-width: 768px) {
 
   .hero {
