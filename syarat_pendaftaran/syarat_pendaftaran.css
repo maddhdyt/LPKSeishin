@@ -76,15 +76,48 @@ body {
   font-weight: 600;
 }
 
+
+
+
 .card-items {
-  border: #ED1B24;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-items > div {
+  background-color: white;
+  border-radius: 20px;
+  width: 385px;
+  height: 532px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card-items > div > img {
+  padding-top: 20px;
+}
+
+.card-items  h2 {
+  margin-top: 16px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .card-items p {
   text-align: justify;
+  color: #595652;
+  font-size: 15px;
+  padding-top: 16px;
+  padding-right: 23px;
+  padding-left: 23px;
+
+
 }
+
+
 
 
 
