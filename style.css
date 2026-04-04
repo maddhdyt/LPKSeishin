@@ -245,6 +245,7 @@ h3, h1, .hero-content p {
 }
 
 .program{
+  margin-top: 5%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -356,6 +357,7 @@ h3, h1, .hero-content p {
 }
 
 .alur{
+  margin-top: 5%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -414,22 +416,26 @@ h3, h1, .hero-content p {
   font-weight: 700;
 }
 
-.syarat{
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  padding: 0 8%;
-  text-align: center;
-}
+  .syarat{ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+    text-align: left;
+  }
 
-.syarat-content{
-  position: relative;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-}
+  .syarat-content{
+    display: contents;
+    text-align: center;
+  }
 
+  .syarat-desc {
+    order:2;
+    text-align: center;
+  }
+  
 .syarat-label {
   order:1;
   font-weight: 700;
@@ -445,6 +451,7 @@ h3, h1, .hero-content p {
 }
 
 .syarat-cards{
+  order: 4;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -492,6 +499,7 @@ h3, h1, .hero-content p {
 }
 
 .btn-syrt {
+  order:5;
   margin-top: 5px;
   background-color: #ED1B24;
   color: white;
@@ -506,6 +514,99 @@ h3, h1, .hero-content p {
 
   transition: 0.3s;
 }
+
+.syarat-content2{
+  order:3;
+}
+
+.galeri {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 70px 8%;
+  text-align: left;
+}
+
+.galeri-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.galeri-content h3, .galeri-content h1, .galeri-content p{
+  order: 1;
+  text-align: left;
+  width: 100%;
+}
+
+.galeri-content h3{
+  color:#ED1B24
+}
+
+.galeri-content h1{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.galeri-content p{
+  margin-top: 10px;
+}
+
+.btn-galeri{
+  margin-top: 20px;
+  order: 2;
+  background-color: #ED1B24;
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 10px;
+
+  transition: 0.3s;
+}
+
+.galeri-gallery{
+  order:3;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: stretch;
+  width: 100%;
+  margin: 30px 0;  
+}
+
+.gal-img-large {
+  flex: 0 0 45%;
+}
+
+.gal-img-large img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.gal-img-stack img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.gal-img-stack{
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+}
+
 
 @media(min-width: 768px) {
 
@@ -645,4 +746,53 @@ h3, h1, .hero-content p {
   .alur{
     object-fit: cover;
   }
+
+  .syarat-img{
+    display: flex;
+    order:6;
+    align-items: stretch;
+    width: 50%;
+  }
+
+  .syarat{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .syarat-content{
+    order: 3;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .syarat-content2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .syarat-label{
+    order: 1;
+  }
+
+  .btn-syrt {
+    margin-left: 5%;
+  }
+
+  .galeri{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+  }
+
+  .galeri-content{
+    width:auto;
+    max-width: 40%;
+  }
+
+  .galeri-gallery{
+    width:auto;
+  }
+
 }
