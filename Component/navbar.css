@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;600;700;800&family=Karla:wght@400;700;800&display=swap');
+
+body {
+  background-color: #FFF9F4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,18 +18,17 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
-body {
-  background-color: #FFF9F4;
+.text-merah {
+  color: #ED1B24;
+  display: inline;
+ font-size: inherit;
+ font-weight: inherit;
+ font-style: inherit;
 }
 
 .logo img{
   height: 45px;
   display: block;
-}
-
-.text-merah {
-  color: #ED1B24;
-  display: inline;
 }
 
 .btn-contact-circle {
