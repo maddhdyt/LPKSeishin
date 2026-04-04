@@ -12,6 +12,9 @@ body {
   font-size: 1.03rem;
 }
 
+p {
+  font-family: 'Karla';
+}
 
 h1, h2, h3 {
   font-family: 'IBM Plex Sans JP', sans-serif;
