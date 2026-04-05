@@ -280,6 +280,21 @@ nav {
     object-fit: cover;
 }
 
+.header-hero.single {
+    width: 100%;
+    height: 400px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px #ddd;
+}
+
+.header-hero.single img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* about section */
 
 .about-section {
@@ -719,6 +734,42 @@ nav {
     height: auto;
     display: block;
 }
+
+/*Highlight program*/
+.highlight-section {
+    margin-top: 40px;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.highlight-card {
+    background-color: FDF6E9;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 /* Footer Section */
