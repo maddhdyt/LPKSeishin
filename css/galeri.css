@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +12,12 @@ body {
 
 .galeri-section {
     padding: 60px 20px;
-    margin: 0 auto;
     text-align: center;
     margin: 5%;
+    margin-top: 40px;
 }
 
-.label {
+.galeri-section .label {
     font-family: 'IBM Plex Sans JP', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -90,6 +92,8 @@ body {
         gap: 40px 20px;
     }
     .galeri-section {
-        margin: 0 8%;
+        margin: 40px auto;
+        width: 70%;
+        min-width: 768px;
     }
 }

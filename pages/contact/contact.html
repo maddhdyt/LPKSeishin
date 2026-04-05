@@ -7,67 +7,62 @@
         <link rel="shortcut icon" href="https://res.cloudinary.com/depmeqzg0/image/upload/v1775320397/favicon_ejnydu.webp" type="image/x-icon">
 
         <link rel="stylesheet" href="../../css/contact.css">
-        <link rel="stylesheet" href="../../css/navbar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
 
     <body>
-
-        <nav class="navbar-desktop">
-            <div class = "nav-left">
-            <div class="logo"><img src="../../assets/logo.png" alt="LPK Seishin Cakrabuana" ></div>
-            <ul class="nav-links">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li class = "dropdown">
-                    <a href="#">Program <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Pilihan 1</a></li>
-                        <li><a href="#">Pilihan 2</a></li>
-                        <li><a href="#">Pilihan 3</a></li>
-                    </ul>
-                </li>
-            </ul>
-            </div>
-            <div class="nav-right">
-                <a href="#" class="btn-contact">
-                    <i class="fa-solid fa-phone"></i> Hubungi Kami
-                </a>
-            </div>
-        </nav>
-
-        <nav class="navbar-mobile">
-            <div class="navbar-capsule">
-                <div class="logo">
-                    <img src="../../assets/logo.png" alt="Logo">
-                </div>
-
-                <div class="nav-right-mobile">
-                    <a href="#" class="btn-contact-circle"><i class="fa-solid fa-phone"></i></a>
-
-                    <div id="hamburger" class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+        <div class="navbar-container">
+            <div class="container">
+                <nav class="navbar-mobile-pill">
+                    <div class="nav-wrapper">
+                        <img src="https://res.cloudinary.com/depmeqzg0/image/upload/v1775320259/logolpkseishin2_jju50g.webp" alt="logo" class="nav-logo">
                     </div>
 
-                    <ul class="mobile-links">
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Tentang Kami</a></li>
-                        <li class = "dropdown">
-                            <a href="#">Program <i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu-mobile">
-                                <li><a href="#">Pilihan 1</a></li>
-                                <li><a href="#">Pilihan 2</a></li>
-                                <li><a href="#">Pilihan 3</a></li>
+                    <ul class="nav-list" id="nav-menu">
+                        <a href="../../index.html#" class="nav-item group font-karla">Beranda<span></span></a>
+                        <a href="../../index.html#about" class="nav-item group font-karla">Tentang Kami<span></span></a>
+                        <div class="nav-item dropdown group font-karla">
+                            <div class="dropdown-toggle">
+                                Program
+                                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </div>
+                            <span></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../index.html#program" class="dropdown-link">Program Visa Kerja (Tokutei Ginou)</a></li>
+                                <li><a href="../../index.html#program" class="dropdown-link">Program Persiapan Magang</a></li>
+                                <li><a href="../../index.html#program" class="dropdown-link">Bekerja Sambil Kuliah</a></li>
                             </ul>
-                        </li>
+                        </div>
+                        <a href="../../index.html#roadmap" class="nav-item font-karla">Alur<span></span></a>
+                        <a href="../../index.html#requirements" class="nav-item font-karla">Persyaratan<span></span></a>
+                        <a href="../../index.html#gallery" class="nav-item font-karla">Galeri<span></span></a>
+                        <a href="../../index.html#testimoni" class="nav-item font-karla">Testimoni<span></span></a>
+                        <a href="../../index.html#legality" class="nav-item font-karla">Legalitas<span></span></a>
+                        <a href="../../index.html#faq" class="nav-item font-karla">FaQ<span></span></a>
                     </ul>
 
-                </div>
+                    <div class="nav-actions">
+                        <a href="https://forms.gle/ctU4bMmhunpBm8Ae9" class="group nav-button font-karla">
+                            <img src="https://res.cloudinary.com/depmeqzg0/image/upload/v1775375763/telfon_jzz1gs.webp" alt="telfon" class="icon-btn">
+                            <span class="text-btn">Hubungi Kami</span>
+                        </a>
 
+                        <div class="hamburger" id="hamburger-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
         
         <section class="contact-container">
         <div class="hero">
@@ -117,7 +112,103 @@
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.6146676627204!2d107.76071527430427!3d-6.936572293063385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c3b1e39ec85d%3A0xfee5a68a9a21a9ec!2sLPK%20SEISHIN%20CAKRABUANA!5e0!3m2!1sen!2sid!4v1775387348829!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        </section>
 
+        
+        </section>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-top">
+
+                    <div class="footer-logo-col">
+                        <img src="https://res.cloudinary.com/depmeqzg0/image/upload/v1775322068/maskgroup_1_oiaefn.webp" alt="LPK Seishin Cakrabuana" class="footer-logo">
+                    </div>
+
+                    <div class="footer-contact-col font-karla">
+                        <p class="address">Komplek Perumahan Janatipark, Jl. Raya Jatinangor Cluster III blok D4, Cibeusi,
+                            Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</p>
+
+                        <div class="contact-item">
+                            <span class="label">No Telepon:</span>
+                            <p>+6285722198111</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="label">Email:</span>
+                            <p>seishincakrabuana@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-nav-col">
+                        <h4 class="font-ibm">NAVIGASI</h4>
+                        <ul class="font-karla footer-links">
+                            <li><a href="../../index.html#">Beranda</a></li>
+                            <li><a href="../../index.html#about">Tentang Kami</a></li>
+                            <li><a href="../../index.html#program">Program Kami</a></li>
+                            <li><a href="../../index.html#roadmap">Alur</a></li>
+                            <li><a href="../../index.html#requirements">Persyaratan</a></li>
+                            <li><a href="../../index.html#gallery">Galeri</a></li>
+                            <li><a href="../../index.html#testimoni">Testimoni</a></li>
+                            <li><a href="../../index.html#legality">Legalitas</a></li>
+                            <li><a href="../../index.html#faq">FaQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-nav-col">
+                        <h4 class="font-ibm">PROGRAM</h4>
+                        <ul class="font-karla footer-links">
+                            <li><a href="../../index.html#program">Program Persiapan Magang</a></li>
+                            <li><a href="../../index.html#program">Program Visa Kerja (Tokutei Ginou)</a></li>
+                            <li><a href="../../index.html#program">Program Bekerja Sambil Kuliah</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container footer-bottom-wrapper">
+                    <p class="copyright font-karla">Copyright @2025 Lpk Seishin Cakrabuana | Developed by NUS</p>
+
+                    <div class="social-area font-karla">
+                        <span>Follow Us</span>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                                    </path>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="X Twitter">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4l16 16m0-16L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../../script/script.js"></script>
         </body>
         </html>
