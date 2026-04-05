@@ -13,8 +13,9 @@ body {
 .galeri-section {
     padding: 60px 20px;
     text-align: center;
-    margin: 5%;
+    margin: 5% auto;
     margin-top: 40px;
+    max-width: 1400px;
 }
 
 .galeri-section .label {

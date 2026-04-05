@@ -20,8 +20,9 @@
 
 .contact-container {
     padding: 60px 20px;
-    margin: 5% 8%;
+    margin: 5% auto;
     text-align: center;
+    max-width: 1400px;
 }
 
 .buttons{
@@ -87,7 +88,7 @@
 
 @media (min-width: 768px) {
     .contact-container{
-        margin: 5% 10%;
+        margin: 5% auto;
     }
     .cards{
         grid-template-columns: repeat(3, 1fr);
