@@ -1,0 +1,147 @@
+* {
+    outline: 1px solid red;
+ } 
+
+.hero-program {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px;
+    align-items: center;
+    padding: 80px 0 100px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #b91c1c;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.hero-tagline {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b91c1c;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: #555;
+    line-height: 26px;
+    margin-bottom: 28px;
+}
+
+.hero-program-image {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 4 / 3;
+}
+
+.hero-program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.hero-program-image:hover img {
+    transform: scale(1.03);
+}
+.persyaratan {
+    padding: 80px 20px;
+    background: #f5f1ec;
+    text-align: center;
+}
+
+/* TITLE */
+.persyaratan h3 {
+    color: #c40000;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.persyaratan p {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* WRAPPER */
+.ps-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* GRID */
+.ps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.ps-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.ps-card:hover {
+    transform: translateY(-4px);
+}
+
+/* IMAGE */
+.ps-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* TEXT */
+.ps-card h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.ps-card p {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .ps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .ps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .persyaratan p {
+        font-size: 22px;
+    }
+}
