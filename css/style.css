@@ -200,6 +200,14 @@ nav {
     line-height: 24px;
 }
 
+.header-title .tagline {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b91c1c;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
 .header-title .btn-group {
     display: flex;
     gap: 15px;
