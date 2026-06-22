@@ -1,0 +1,15 @@
+Options -MultiViews
+RewriteEngine On
+
+# 1. Mencegah agar file dan folder yang ada (seperti CSS, JS, dan Gambar) tidak ikut ter-rewrite
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# 2. Redirect URL eksternal: jika ada yang mengakses URL dengan ekstensi .html, maka arahkan ke URL tanpa .html
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.html
+RewriteRule ^/?(.*)\.html$ /$1 [L,R=301]
+
+# 3. Handle URL internal: panggil file .html secara internal untuk request URL jika file .html tersebut ada
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
